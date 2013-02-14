@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dalton Musicworks - Contact Me</title>
+
+    <!-- Included CSS Files -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="js/foundation/modernizr.foundation.js"></script>
+</head>
+
+
+<body>
+
+<div class="page">
+    <div class="header">
+
+        <!-- navbar -->
+        <div class="row">
+            <div class="three columns">
+                <h1>
+                    <a href="index.html" title="Return to the front page">
+                        <img src="js/foundation/holder.js/400x100/text:Logo" alt="Dalton Musicworks"/>
+                    </a>
+                </h1>
+            </div>
+
+            <div class="nine columns">
+                <ul class="nav-bar right">
+                    <li><a href="#">Guitars</a></li>
+                    <li><a href="#">Basses</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li class="has-flyout">
+                        <a href="#">Extras</a>
+                        <a href="#" class="flyout-toggle"><span> </span></a>
+                        <ul class="flyout">
+                            <li><a href="#">Amps</a></li>
+                            <li><a href="#">Effects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Media Gallery</a></li>
+                    <li><a href="aboutme.html">About Philip</a></li>
+                    <li class="active"><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="main">
+        <!-- Contact Details -->
+        <div class="row">
+
+            <!-- Email Form -->
+            <div class="six columns offset-by-one">
+
+                <h3>Get in Touch!</h3>
+
+                <form>
+                    <label>Your Name</label>
+                    <input type="text" id="yourName" placeholder="Stik E. Frets" class="ten">
+
+                    <label>Your Email</label>
+                    <input type="text" id="yourEmail" placeholder="guitarHero@shredme.com" class="ten">
+
+
+                    <textarea rows="10" placeholder="You guys rock!"></textarea>
+
+                    <input type="submit" class="radius button"></input>
+                </form>
+            </div>
+
+
+
+            <!-- Map -->
+            <div class="three columns">
+                <h5>Map</h5>
+                <!-- Clicking this placeholder fires the mapModal Reveal modal -->
+                <p>
+                    <a href="" data-reveal-id="mapModal"><img src="js/foundation/holder.js/400x280/text:map" /></a><br />
+                    <a href="" data-reveal-id="mapModal">View Map</a>
+                </p>
+                <p>
+                    123 Awesome St.<br />
+                    Somewhere, Earth<br />
+                    NCC-1701
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Modal -->
+    <div class="reveal-modal" id="mapModal">
+        <h4>Where We Are</h4>
+        <p><img src="js/foundation/holder.js/800x600/text:Map" /></p>
+
+        <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+        <a href="#" class="close-reveal-modal">&times;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="row">
+                    <div class="five columns">
+                        <p>&copy; 2013 West Island Web Designs</p>
+                    </div>
+                    <div class="seven columns">
+                        <ul class="inline-list right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Guitars</a></li>
+                            <li><a href="#">Basses</a></li>
+                            <li><a href="#">Parts</a></li>
+                            <li><a href="#">Media Gallery</a></li>
+                            <li><a href="aboutme.html">About Philip</a></li>
+                            <li><a href="contact.html">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</div> <!-- page -->
+
+
+
+
+
+<!-- Included JS Files (Uncompressed) -->
+<script src="js/foundation/jquery.js"></script>
+<script src="js/foundation/jquery.cookie.js"></script>
+<script src="js/foundation/jquery.event.move.js"></script>
+<script src="js/foundation/jquery.event.swipe.js"></script>
+<script src="js/foundation/jquery.foundation.accordion.js"></script>
+<script src="js/foundation/jquery.foundation.alerts.js"></script>
+<script src="js/foundation/jquery.foundation.buttons.js"></script>
+<script src="js/foundation/jquery.foundation.clearing.js"></script>
+<script src="js/foundation/jquery.foundation.forms.js"></script>
+<script src="js/foundation/jquery.foundation.joyride.js"></script>
+<script src="js/foundation/jquery.foundation.magellan.js"></script>
+<script src="js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+<script src="js/foundation/jquery.foundation.navigation.js"></script>
+<script src="js/foundation/jquery.foundation.orbit.js"></script>
+<script src="js/foundation/jquery.foundation.reveal.js"></script>
+<script src="js/foundation/jquery.foundation.tabs.js"></script>
+<script src="js/foundation/jquery.foundation.tooltips.js"></script>
+<script src="js/foundation/jquery.foundation.topbar.js"></script>
+<script src="js/foundation/jquery.placeholder.js"></script>
+
+<!-- Application Javascript, safe to override -->
+<script src="js/foundation/app.js"></script>
+</body>
+</html>
