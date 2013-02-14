@@ -6074,15 +6074,21 @@ footer {
 }
 
 /* -----------------------------------------
-   Page Name aboutme.html
+   aboutme.html
 ----------------------------------------- */
 /* line 102, ../sass/app.scss */
-#profilePic {
+#ProfilePic {
   float: left;
   margin-right: 2em;
   margin-bottom: 1.3em;
 }
 
 /* -----------------------------------------
-   Page Name 2
+   gellery.html
 ----------------------------------------- */
+/* line 113, ../sass/app.scss */
+#GalleryHeader {
+  text-align: center;
+  padding: 0.2em;
+  border-bottom: 1px solid #aaaaaa;
+}
