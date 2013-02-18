@@ -1,126 +1,239 @@
-<!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <title>Dalton Musicworks - Guitars</title>
 
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dalton Musicworks - Basses</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!--<style type="text/css">-->
+    <!--body {-->
+    <!--padding-top: 60px;-->
+    <!--padding-bottom: 40px;-->
+    <!--}-->
+    <!--</style>-->
 
-    <!-- Included CSS Files -->
-    <link rel="stylesheet" href="css/app.css">
+    <!-- Project -->
+    <link href="css/app.css" rel="stylesheet">
 
-    <script src="js/foundation/modernizr.foundation.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
 </head>
-
 
 <body>
 
-<div class="page">
+<!-- Wrap all page content -->
+<div id="wrap">
 
-    <!-- header -->
-    <div class="header">
-
-        <!-- navbar -->
-        <div class="row">
-            <div class="three columns">
-                <h1>
-                    <a href="index.html" title="Return to the front page">
-                        <img src="js/foundation/holder.js/400x100/text:Logo" alt="Dalton Musicworks"/>
-                    </a>
-                </h1>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="index.html">
+                    <!--<img src="http://placehold.it/110x39&text=[Logo]" alt="Dalton Musicworks"/>-->
+                    <!--<img src="img/DaltonMusicworksLogoV2.jpg" alt="Dalton Musicworks"/>-->
+                    Dalton Musicworks
+                </a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="guitars.html">Guitars</a></li>
+                        <li class="active"><a href="basses.html">Basses</a></li>
+                        <li><a href="parts.html">Parts</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Amps</a></li>
+                                <li><a href="#">Effects</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="nine columns">
-                <ul class="nav-bar right">
-                    <li><a href="guitars.html">Guitars</a></li>
-                    <li class="active"><a href="basses.html">Basses</a></li>
-                    <li><a href="parts.html">Parts</a></li>
-                    <li class="has-flyout">
-                        <a href="extras.html">Extras</a>
-                        <a href="#" class="flyout-toggle"><span> </span></a>
-                        <ul class="flyout">
-                            <li><a href="#">Amps</a></li>
-                            <li><a href="#">Effects</a></li>
-                        </ul>
+    <!-- Begin page content -->
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <ul class="thumbnails">
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <p class="text-center"><a href="#myModal" data-toggle="modal">
+                                <img src="http://placehold.it/200x166&text=[Bass]" alt="Bass">
+                            </a>
+                            </p>
+                            <h3 class="text-center">Awesome Bass</h3>
+                            <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
+                            <p class="text-center">
+                                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                            </p>
+                        </div>
                     </li>
-                    <li><a href="gallery.html">Videos</a></li>
-                    <li><a href="aboutme.html">About Philip</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <p class="text-center"><a href="#myModal" data-toggle="modal">
+                                <img src="http://placehold.it/200x166&text=[Bass]" alt="Bass">
+                            </a>
+                            </p>
+                            <h3 class="text-center">Awesome Bass</h3>
+                            <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
+                            <p class="text-center">
+                                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <p class="text-center"><a href="#myModal" data-toggle="modal">
+                                <img src="http://placehold.it/200x166&text=[Bass]" alt="Bass">
+                            </a>
+                            </p>
+                            <h3 class="text-center">Awesome Bass</h3>
+                            <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
+                            <p class="text-center">
+                                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span12">
+                <ul class="thumbnails">
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <p class="text-center"><a href="#myModal" data-toggle="modal">
+                                <img src="http://placehold.it/200x166&text=[Bass]" alt="Bass">
+                            </a>
+                            </p>
+                            <h3 class="text-center">Awesome Bass</h3>
+                            <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
+                            <p class="text-center">
+                                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <p class="text-center"><a href="#myModal" data-toggle="modal">
+                                <img src="http://placehold.it/200x166&text=[Bass]" alt="Bass">
+                            </a>
+                            </p>
+                            <h3 class="text-center">Awesome Bass</h3>
+                            <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
+                            <p class="text-center">
+                                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <p class="text-center"><a href="#myModal" data-toggle="modal">
+                                <img src="http://placehold.it/200x166&text=[Bass]" alt="Bass">
+                            </a>
+                            </p>
+                            <h3 class="text-center">Awesome Bass</h3>
+                            <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
+                            <p class="text-center">
+                                <a href="#myModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                            </p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- ------------ -->
 
-    <!-- Main Content -->
-    <div class="main">
+    <!-- Map Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="text-center">Awesome Bass</h3>
+        </div>
+
+        <div class="modal-body">
+            <p class="text-center"><img src="http://placehold.it/400x300&text=[Bass]" /></p>
+            <p>Quisque porttitor aliquam leo sit amet porta! Aenean aliquam nisl eget orci scelerisque adipiscing! Cum sociis natoque penatibus et magnis dis parturient montes</p>
+        </div>
 
 
-
-
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
     </div>
-    <!-- ------------ -->
+    <!-- --------- -->
 
-    <!-- Footer -->
-    <footer>
+    <!-- part of the sticky footer solution -->
+    <div id="push"></div>
+</div> <!-- wrap -->
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
         <div class="row">
-            <div class="twelve columns">
+            <div class="span12">
                 <div class="row">
-                    <div class="five columns">
-                        <p>&copy; 2013 West Island Web Designs</p>
+                    <div class="span5">
+                        <p class="muted">&copy; 2013 West Island Web Designs</p>
                     </div>
-                    <div class="seven columns">
-                        <ul class="inline-list right">
+                    <div class="span7">
+                        <ul class="inline pull-right">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="guitars.html">Guitars</a></li>
                             <li><a href="basses.html">Basses</a></li>
                             <li><a href="parts.html">Parts</a></li>
-                            <li><a href="gallery.html">Videos</a></li>
-                            <li><a href="aboutme.html">About Philip</a></li>
-                            <li><a href="contact.html">Contact Me</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- ------------ -->
+    </div>
+</div>
+<!-- ------------ -->
 
 
-</div> <!-- page -->
+<!-- --------- Javascript ---------- -->
+<!-- jQuery (required for Bootstrap) -->
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.js"><\/script>')</script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.js"></script>
+
+<!-- 3rd party -->
+<script src="js/holder/holder.js"></script>
+
+<!-- Project -->
+
+<script src="js/app.js"></script>
+<!-- ------------------------------- -->
 
 
-
-
-
-<!-- Included JS Files (Uncompressed) -->
-<script src="js/foundation/jquery.js"></script>
-<script src="js/foundation/jquery.cookie.js"></script>
-<script src="js/foundation/jquery.event.move.js"></script>
-<script src="js/foundation/jquery.event.swipe.js"></script>
-<script src="js/foundation/jquery.foundation.accordion.js"></script>
-<script src="js/foundation/jquery.foundation.alerts.js"></script>
-<script src="js/foundation/jquery.foundation.buttons.js"></script>
-<script src="js/foundation/jquery.foundation.clearing.js"></script>
-<script src="js/foundation/jquery.foundation.forms.js"></script>
-<script src="js/foundation/jquery.foundation.joyride.js"></script>
-<script src="js/foundation/jquery.foundation.magellan.js"></script>
-<script src="js/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-<script src="js/foundation/jquery.foundation.navigation.js"></script>
-<script src="js/foundation/jquery.foundation.orbit.js"></script>
-<script src="js/foundation/jquery.foundation.reveal.js"></script>
-<script src="js/foundation/jquery.foundation.tabs.js"></script>
-<script src="js/foundation/jquery.foundation.tooltips.js"></script>
-<script src="js/foundation/jquery.foundation.topbar.js"></script>
-<script src="js/foundation/jquery.placeholder.js"></script>
-
-<!-- Application Javascript, safe to override -->
-<script src="js/foundation/app.js"></script>
 </body>
 </html>
