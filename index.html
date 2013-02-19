@@ -73,19 +73,26 @@
         <!-- motto -->
         <div class="row">
             <div class="span3">
-                    <img src="img/DaltonMusicworksLogoV2.jpg" alt="Dalton Musicworks">
+                <img src="img/DaltonMusicworksLogoV2.jpg" alt="Dalton Musicworks">
             </div>
             <div class="span8">
                 <div class="page-header">
                     <h3 class="text-center">There is a single belief that guides our business:</h3>
-                        <h3 class="text-center">You know what you want.</h3>
+                    <h3 class="text-center">You know what you want.</h3>
                 </div>
             </div>
         </div>
 
         <!-- slideshow -->
         <div class="row">
-            <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+            <div id="home-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+
+                <ol class="carousel-indicators">
+                    <li data-target="#home-carousel-id" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-carousel-id" data-slide-to="1"></li>
+                    <li data-target="#home-carousel-id" data-slide-to="2"></li>
+                </ol>
+
                 <div class="carousel-inner">
                     <div class="item active"><!-- class of active since it's the first item -->
                         <img src="DMW_images/Strat.jpg" alt="" />
@@ -108,42 +115,37 @@
                 </div><!-- /.carousel-inner -->
                 <!--  Next and Previous controls below href values
                       must reference the id for this carousel -->
-                <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-                <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+                <a class="carousel-control left" href="#home-carousel-id" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#home-carousel-id" data-slide="next">&rsaquo;</a>
             </div><!-- /.carousel -->
         </div>
 
         <!-- body copy -->
         <div class="row">
             <div class="span6">
-                <!--<div class="well">-->
-                    <p>
-                        It’s a tone… or a look. It’s a feel thing. It’s better intonation.
-                        It’s fit and finish.  It’s a U-shaped, one piece maple neck with a
-                        1.65” bone nut and a 7.5” to 9.5” compound radius fingerboard and
-                        jumbo frets.
-                    </p>
+                <p>
+                    It’s a tone…or a look. It’s a feel thing. It’s better intonation.
+                    It’s fit and finish.  It’s a U-shaped, one piece maple neck with a
+                    1.65” bone nut and a 7.5” to 9.5” compound radius fingerboard and
+                    jumbo frets.
+                </p>
 
-                    <p>Whatever it is… it’s about you.  You know what you want.</p>
-                <!--</div>-->
+                <p>Whatever it is… it’s about you.  You know what you want.</p>
             </div>
 
             <div class="span6">
-                <!--<div class="well">-->
-                    <p>
-                        So, welcome to our shop where we offer some very fine guitars and basses,
-                        along with an excellent selection of parts for those who prefer to roll
-                        their own. We sell only products that we use. If we can help you find what
-                        you need, that would be our privilege. If not, maybe we can help point you
-                        in the right direction. Never settle. You know what you want.
-                    </p>
-                </div>
-            <!--</div>-->
+                <p>
+                    So, welcome to our shop where we offer some very fine guitars and basses,
+                    along with an excellent selection of parts for those who prefer to roll
+                    their own. We sell only products that we use. If we can help you find what
+                    you need, that would be our privilege. If not, maybe we can help point you
+                    in the right direction. Never settle. You know what you want.
+                </p>
+            </div>
         </div>
 
 
-
-    </div>
+    </div> <!-- /.container -->
 
     <!-- part of the sticky footer solution -->
     <div id="push"></div>
@@ -155,10 +157,10 @@
         <div class="row">
             <div class="span12">
                 <div class="row">
-                    <div class="span5">
+                    <div class="span4">
                         <p class="muted">&copy; 2013 West Island Web Designs</p>
                     </div>
-                    <div class="span7">
+                    <div class="span8">
                         <ul class="inline pull-right">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="guitars.html">Guitars</a></li>
@@ -191,9 +193,7 @@
 
 </body>
 </html>
- protocol relative URL; fall back to local if necessary -->
-<script src="js/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.js"><\/script>')</script>
+ite('<script src="js/jquery-1.9.1.js"><\/script>')</script>
 
 <!-- Bootstrap -->
 <script src="js/bootstrap.js"></script>
