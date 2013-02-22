@@ -54,7 +54,12 @@ body {
     }
 }*/
 
-
+/* add background-color tracking for navbar items */
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: #F1F1F1;
+    color: #333333;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
 
 
 /* -----------------------------------------
