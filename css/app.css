@@ -56,9 +56,22 @@ body {
 
 /* add background-color tracking for navbar items */
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-    background-color: #F1F1F1;
+    background-color: #dbdbdb;
     color: #333333;
     text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+/* add to Bootstrap's .carousel-caption style to support opacity in the slide caption in IE8 and under */
+.carousel-caption {
+    /* inherit the other properties */
+
+    /* IE fun */
+    background:none;
+    /* for IE8 */
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#26333333,endColorstr=#26333333);
+    /* for IE7 and below */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
+    zoom: 1;
 }
 
 
