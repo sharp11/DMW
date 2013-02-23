@@ -72,6 +72,11 @@ body {
     /* for IE7 and below */
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000);
     zoom: 1;
+
+    /* IMPORTANT!!! */
+    /* Make sure we put back the original call to rgba() AFTER our IE fix above */
+    /* because part of the IE hack sets the background to none. */
+    background: rgba(0, 0, 0, 0.75);
 }
 
 
