@@ -1,7 +1,7 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Dalton Musicworks - Contact Us</title>
+    <title>Dalton Musicworks - Videos</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <meta charset="UTF-8">
@@ -10,12 +10,16 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap/2.3.0/bootstrap-responsive.min.css" rel="stylesheet">
+    
     <!--<style type="text/css">-->
     <!--body {-->
     <!--padding-top: 60px;-->
     <!--padding-bottom: 40px;-->
     <!--}-->
     <!--</style>-->
+
+	<!-- Lightview -->
+	<link href="css/lightview/3.2.8/lightview.css" rel="stylesheet">
 
     <!-- Project -->
     <link href="css/app.css" rel="stylesheet">
@@ -24,8 +28,6 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-
 </head>
 
 <body>
@@ -59,9 +61,9 @@
                                 <li><a href="#">Effects</a></li>
                             </ul>
                         </li>
-                        <li><a href="videos.html">Videos</a></li>
+                        <li class="active"><a href="videos.html">Videos</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li class="active"><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -70,60 +72,25 @@
 
     <!-- Begin page content -->
     <div class="container">
-
         <div class="row">
-            <div class="span6">
-                <!-- Email Form -->
-                <h3>Get in Touch!</h3>
-
-                <form>
-                    <label>Your Name</label>
-                    <input type="text" class="span4" id="yourName" placeholder="Stik E. Frets">
-
-                    <label>Your Email</label>
-                    <input type="text" class="span4" id="yourEmail" placeholder="guitarHero@shredme.com">
-
-                    <label>What's Up?</label>
-                    <textarea rows="10" class="span5" placeholder="You guys rock!"></textarea>
-
-                     <!-- why do we need this just to have the submit button line up under the message box???? -->
-                    <label></label>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-
-            <div class="span6">
-                <!--Map-->
-                <h3>Where We are:</h3>
-                <!-- Clicking this placeholder fires the mapModal Reveal modal -->
-                <p>
-                    <a href="#myModal" role="button" class="btn" data-toggle="modal"><img src="img/Map.jpg" /></a>
-                </p>
-                <p><a href="#myModal" role="button" class="btn" data-toggle="modal">View Map</a></p>
-                <p>
-                    123 Awesome St.<br />
-                    Somewhere, Earth<br />
-                    NCC-1701
-                </p>
-
-                <!-- Map Modal -->
-                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h3 id="myModalLabel">Where We Are</h3>
-                    </div>
-
-                    <div class="modal-body">
-                        <p><img src="img/MapBig.jpg"></p>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                    </div>
-                </div>
-                <!-- --------- -->
+            <div class="span6 offset3">
+                <h3 id="VideosHeader">Mauris faucibus sagittis sapien sit!</h3>
             </div>
         </div>
+
+        <div class="row">
+            <div class="container pagination-centered">
+      			<a href='http://www.youtube.com/embed/B52fUubeMb0?autoplay=1&amp;autohide=1&amp;border=0&amp;egm=0&amp;showinfo=0&amp;showsearch=0'
+         			class='lightview'
+         			data-lightview-type="iframe" 
+         			data-lightview-options="width: 560, height: 315, viewport: 'scale'" 
+         			data-lightview-title="TEDTalks: Let's use video to reinvent education"
+         			data-lightview-caption="Salman Khan talks about how and why he created the remarkable Khan Academy.">
+                	<img src="img/CJKC2011Preview.jpg"></a>
+              	<p class="text-center">We will be able to pop-up videos and see all the great gear in action.</p>
+          </div>
+        </div>
+
 
     </div>
 
@@ -138,7 +105,7 @@
             <div class="span12">
                 <div class="row">
                     <div class="span5">
-                        <p>&copy; 2013 West Island Web Designs</p>
+                        <p class="muted">&copy; 2013 West Island Web Designs</p>
                     </div>
                     <div class="span7">
                         <ul class="inline pull-right">
@@ -166,9 +133,14 @@
 <!-- Bootstrap -->
 <script src="js/bootstrap/2.3.0/bootstrap.min.js"></script>
 
+<!-- Lightview -->
+<script src="js/lightview/3.2.8/excanvas.js"></script>
+<script src="js/lightview/3.2.8/spinners.min.js"></script>
+<script src="js/lightview/3.2.8/lightview.js"></script>
+
 <!-- enable basic responsiveness for <= IE8 -->
 <script src="js/respond.min.js"></script>
-
+        
 <!-- Project script (should load last) -->
 <script src="js/app.js"></script>
 <!-- ------------------------------- -->
