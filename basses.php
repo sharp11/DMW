@@ -1,73 +1,16 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <title>Dalton Musicworks - Basses</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap/2.3.0/bootstrap-responsive.min.css" rel="stylesheet">
-    <!--<style type="text/css">-->
-    <!--body {-->
-    <!--padding-top: 60px;-->
-    <!--padding-bottom: 40px;-->
-    <!--}-->
-    <!--</style>-->
-
-    <!-- Project -->
-    <link href="css/app.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-
-</head>
-
+<?php
+// $pageName needs to be set because dmw_head.php uses it in the title
+$pageTitle = "Basses";
+require('dmw_head.php');
+?>
 <body>
-
-<!-- Wrap all page content -->
+<!-- ----------- Wrap all page content ------------- -->
 <div id="wrap">
-
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container">
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="brand" href="index.html">
-                    <!--<img src="http://placehold.it/110x39&text=[Logo]" alt="Dalton Musicworks"/>-->
-                    <!--<img src="img/DaltonMusicworksLogoV2.jpg" alt="Dalton Musicworks"/>-->
-                    Dalton Musicworks
-                </a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav pull-right">
-                        <li><a href="guitars.html">Guitars</a></li>
-                        <li class="active"><a href="basses.html">Basses</a></li>
-                        <li><a href="parts.html">Parts</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Amps</a></li>
-                                <li><a href="#">Effects</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="videos.html">Videos</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <?php
+    require('dmw_navbar.php');
+    ?>
     <!-- Begin page content -->
     <div class="container">
         <div class="row">
@@ -165,58 +108,35 @@
                 </ul>
             </div>
         </div>
-    </div>
 
-    <!-- Map Modal -->
-    <div id="BassDetailsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="BassDetailsModalLabel" aria-hidden="true">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="BassDetailsModalLabel" class="text-center">Awesome Bass</h3>
-        </div>
+        <!-- Bass details Modal -->
+        <div id="BassDetailsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="BassDetailsModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="BassDetailsModalLabel" class="text-center">Awesome Bass</h3>
+            </div>
 
-        <div class="modal-body">
-            <p class="text-center"><img src="img/JazzBassCloseUp.jpg"></p>
-            <p>Quisque porttitor aliquam leo sit amet porta! Aenean aliquam nisl eget orci scelerisque adipiscing! Cum sociis natoque penatibus et magnis dis parturient montes</p>
-        </div>
+            <div class="modal-body">
+                <p class="text-center"><img src="img/JazzBassCloseUp.jpg"></p>
+                <p>Quisque porttitor aliquam leo sit amet porta! Aenean aliquam nisl eget orci scelerisque adipiscing! Cum sociis natoque penatibus et magnis dis parturient montes</p>
+            </div>
 
 
-        <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        </div>
-    </div>
-    <!-- --------- -->
-
-    <!-- part of the sticky footer solution -->
-    <div id="push"></div>
-</div> <!-- wrap -->
-
-<!-- Footer -->
-<div id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div class="row">
-                    <div class="span5">
-                        <p class="muted">&copy; 2013 West Island Web Designs</p>
-                    </div>
-                    <div class="span7">
-                        <ul class="inline pull-right">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="guitars.html">Guitars</a></li>
-                            <li><a href="basses.html">Basses</a></li>
-                            <li><a href="parts.html">Parts</a></li>
-                            <li><a href="videos.html">Videos</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contactus.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
             </div>
         </div>
-    </div>
-</div>
-<!-- ------------ -->
+        <!-- --------- -->
 
+    </div>
+    <!-- End page content -->
+    <!-- need this for sticky footer solution -->
+    <div id="push"></div>
+</div>
+<!-- ------------------ /. wrap --------------------- -->
+<?php
+require('dmw_footer.php');
+?>
 
 <!-- --------- Javascript ---------- -->
 <!-- jQuery (required for Bootstrap) -->
@@ -230,7 +150,14 @@
 
 <!-- Project script (should load last) -->
 <script src="js/app.js"></script>
-<!-- ------------------------------- -->
 
+<!-- set the active navbar item -->
+<script>
+    $(document).ready(function(){
+        $('#TOP_NAVBAR li').removeClass('active');
+        $('#TOP_NAVBAR_BASSES').addClass('active');
+    });
+</script>
+<!-- --------------------------------- -->
 </body>
 </html>

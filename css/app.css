@@ -81,7 +81,7 @@ body {
 
 
 /* -----------------------------------------
-   about.html
+   about.php
 ----------------------------------------- */
 #ProfilePic {
     float: left;
@@ -90,10 +90,28 @@ body {
 }
 
 /* -----------------------------------------
-   gellery.html
+   videos.php
 ----------------------------------------- */
 #VideosHeader {
     text-align: center;
     padding: 0.2em;
     border-bottom: 1px solid #aaaaaa;
 }
+
+#video .modal-body {
+    max-height: 365px; /* set to height of video + 5 pixels so that vertical scrollbar does not appear in modal */
+}
+
+#video {
+    width: 670px; /* set to width of video + 30 pixels so that horizontal scrollbar does not appear in modal */
+    margin: -250px 0 0 -335px; /* center video in modal (original = margin: -250px 0 0 -280px;) -> set last number to width divided by 2 */
+}
+
+#video {
+    margin: -20px 0 0 -335px; /* center modal in browser (original = margin: -300px 0 0 -280 px;) -> just play with the values to get desired position */
+}
+
+/* -----------------------------------------
+   videos.test.php
+----------------------------------------- */
+.modal-backdrop {background-color: black;}
