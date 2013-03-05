@@ -48,8 +48,8 @@ require('dmw_footer.php');
 <!-- set the active navbar item -->
 <script>
     $(document).ready(function(){
-        $('#TOP_NAVBAR li').removeClass('active');
-        $('#TOP_NAVBAR_ABOUTUS').addClass('active');
+        $('#top_navbar li').removeClass('active');
+        $('#top_navbar_aboutus').addClass('active');
     });
 </script>
 </body>

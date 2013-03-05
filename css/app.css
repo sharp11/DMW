@@ -6,38 +6,39 @@
 :: Page Name 1
 :: Page Name 2
 */
+
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
 
-/* Sticky footer styles
-   -------------------------------------------------- */
-
-html,
 body {
-    height: 100%;
-    /* The html and body elements cannot have any padding or margin. */
+    overflow-y: scroll;
 }
 
-/* Wrapper for page content to push down footer */
+/* ---------------------------------------- */
+/* Sticky footer */
+html, body {
+    height: 100%;
+
+    /*The html and body elements cannot have any padding or margin.*/
+}
+
+ /*Wrapper for page content to push down footer*/
 #wrap {
     min-height: 100%;
     height: auto !important;
     height: 100%;
+
     /* Negative indent footer by it's height */
-    margin: 0 auto -60px;
+    margin: 0 auto -85px;
 }
 
-/* Set the fixed height of the footer here */
-#push,
-#footer {
-    height: 60px;
-}
-#footer {
-    background-color: #f5f5f5;
+ /*Set the fixed height of the footer here*/
+#push, #footer {
+    height: 85px;
 }
 
-/* Lastly, apply responsive CSS fixes as necessary */
+ /*Lastly, apply responsive CSS fixes as necessary*/
 @media (max-width: 767px) {
     #footer {
         margin-left: -20px;
@@ -47,12 +48,32 @@ body {
     }
 }
 
-/* Remove top padding when top navbar goes static in narrow viewports */
-/*@media (max-width: 979px) {
+ /*Remove top padding when top navbar goes static in narrow viewports*/
+@media (max-width: 979px) {
     body {
         padding-top: 0;
     }
-}*/
+}
+
+/* ---------------------------------------- */
+/* general footer styling */
+#footer {
+    background-color: #e6e6e6;
+}
+#footer_row1 {
+    padding-top: 5px;
+}
+
+#footer_links {
+    padding-top: 15px;
+}
+
+/* ---------------------------------------- */
+/* general top navabr styling */
+#top_navbar {
+   margin-top: 15px;
+   font-size: 1.2em;
+}
 
 /* add background-color tracking for navbar items */
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
@@ -61,6 +82,10 @@ body {
     text-shadow: 1px 1px 0 #FFFFFF;
 }
 
+
+/* -----------------------------------------
+   index.php
+----------------------------------------- */
 /* add to Bootstrap's .carousel-caption style to support opacity in the slide caption in IE8 and under */
 .carousel-caption {
     /* inherit the other properties */
@@ -90,6 +115,17 @@ body {
 }
 
 /* -----------------------------------------
+   guitars.php
+----------------------------------------- */
+.Product_Image_Container {
+    float: left; 
+}
+
+.Product_Info_Container {
+    float: left;
+}
+
+/* -----------------------------------------
    videos.php
 ----------------------------------------- */
 #VideosHeader {
@@ -110,6 +146,34 @@ body {
 #video {
     margin: -20px 0 0 -335px; /* center modal in browser (original = margin: -300px 0 0 -280 px;) -> just play with the values to get desired position */
 }
+
+
+/* center the play video button */
+.VideoContainer {
+    position: relative;
+}
+
+.VideoContainer > img {
+    display: block;
+    margin: auto;
+    z-index: 1;
+
+}
+
+.VideoContainer > .VideoPlayButton {
+    position: absolute;
+    top: 50%;
+    margin-top: -45px; /* half of the play image size (70px in our case) */
+    right: 50%;
+    margin-right: -45px;
+    z-index: 9;
+}
+
+.VideoContainer a {
+    /* remove any anchor outline on the play button image */
+    outline: none;
+ }
+/* ----------------------------- */
 
 /* -----------------------------------------
    videos.test.php

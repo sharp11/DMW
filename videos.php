@@ -21,15 +21,21 @@ require('dmw_head.php');
         </div>
 
         <div class="row">
-            <div class="container pagination-centered">
-                <a data-toggle="modal" href="#video"><img src="img/CJKC2011Preview.jpg"></a>
+            <div class="span6 offset3">
+                <div class="VideoContainer">
+                    <img src="img/CJKC2011Preview.jpg" alt="Video background image">
+
+                    <a  class="VideoPlayButton" data-toggle="modal" href="#video">
+                        <img src="img/playbutton.png" alt="Video play button">
+                    </a>
+                </div>
+                <p class="text-center">We will be able to pop-up videos and see all the great gear in action.</p>
             </div>
-            <p class="text-center">We will be able to pop-up videos and see all the great gear in action.</p>
         </div>
 
         <div class="modal hide" id="video">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">x</button>
+                <button type="bt" class="close" data-dismiss="modal">x</button>
                 <h4>PHIL'S FILLS - Episode 1:&nbsp; The Dalton Custom S</h4>
             </div>
             <div class="modal-body">
@@ -57,6 +63,8 @@ require('dmw_footer.php');
 
 <!-- Bootstrap -->
 <script src="js/bootstrap/2.3.0/bootstrap.min.js"></script>
+<script src="js/bootstrap/2.3.0/bootstrap-modal.js"></script>
+<script src="js/bootstrap/2.3.0/bootstrap-modalmanager.js"></script>
 
 <!-- enable basic responsiveness for <= IE8 -->
 <script src="js/respond.min.js"></script>
@@ -70,8 +78,8 @@ require('dmw_footer.php');
 <!-- set the active navbar item -->
 <script>
     $(document).ready(function(){
-        $('#TOP_NAVBAR li').removeClass('active');
-        $('#TOP_NAVBAR_VIDEOS').addClass('active');
+        $('#top_navbar li').removeClass('active');
+        $('#top_navbar_videos').addClass('active');
     });
 </script>
 <!-- ------------------------------- -->

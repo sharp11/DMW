@@ -16,52 +16,51 @@ require('dmw_head.php');
 
         <!-- motto -->
         <div class="row">
-            <div class="span3">
-                <img src="img/DaltonMusicworksLogoV2.jpg" alt="Dalton Musicworks">
-            </div>
-            <div class="span8">
-                <div class="page-header">
-                    <h3 class="text-center">There is a single belief that guides our business:</h3>
-                    <h3 class="text-center">You know what you want.</h3>
-                </div>
+<!--            <div class="span3">-->
+<!--                <img src="img/DaltonMusicworksLogoV2.jpg" alt="Dalton Musicworks Logo">-->
+<!--            </div>-->
+            <div class="span12 page-header">
+                <h3>There is a single belief that guides our business: You know what you want.</h3>
             </div>
         </div>
 
         <!-- slideshow -->
         <div class="row">
-            <div id="home-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+            <div class="span12">
+                <div id="home-carousel-id" class="carousel slide"><!-- class of slide for animation -->
 
-                <ol class="carousel-indicators">
-                    <li data-target="#home-carousel-id" data-slide-to="0" class="active"></li>
-                    <li data-target="#home-carousel-id" data-slide-to="1"></li>
-                    <li data-target="#home-carousel-id" data-slide-to="2"></li>
-                </ol>
+                    <ol class="carousel-indicators">
+                        <li data-target="#home-carousel-id" data-slide-to="0" class="active"></li>
+                        <li data-target="#home-carousel-id" data-slide-to="1"></li>
+                        <li data-target="#home-carousel-id" data-slide-to="2"></li>
+                    </ol>
 
-                <div class="carousel-inner">
-                    <div class="item active"><!-- class of active since it's the first item -->
-                        <img src="img/Strat.jpg" alt="" />
-                        <div class="carousel-caption">
-                            <p>Dalton Custom S</p>
+                    <div class="carousel-inner">
+                        <div class="item active"><!-- class of active since it's the first item -->
+                            <img src="img/Strat.jpg" alt="" />
+                            <div class="carousel-caption">
+                                <p>Dalton Custom S</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/Godin.jpg" alt="" />
-                        <div class="carousel-caption">
-                            <p>Dalton Custom G</p>
+                        <div class="item">
+                            <img src="img/Godin.jpg" alt="" />
+                            <div class="carousel-caption">
+                                <p>Dalton Custom G</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/335.jpg" alt="" />
-                        <div class="carousel-caption">
-                            <p>Dalton Custom 35</p>
+                        <div class="item">
+                            <img src="img/335.jpg" alt="" />
+                            <div class="carousel-caption">
+                                <p>Dalton Custom 35</p>
+                            </div>
                         </div>
-                    </div>
-                </div><!-- /.carousel-inner -->
-                <!--  Next and Previous controls below href values
-                      must reference the id for this carousel -->
-                <a class="carousel-control left" href="#home-carousel-id" data-slide="prev">&lsaquo;</a>
-                <a class="carousel-control right" href="#home-carousel-id" data-slide="next">&rsaquo;</a>
-            </div><!-- /.carousel -->
+                    </div><!-- /.carousel-inner -->
+                    <!--  Next and Previous controls below href values
+                          must reference the id for this carousel -->
+                    <a class="carousel-control left" href="#home-carousel-id" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#home-carousel-id" data-slide="next">&rsaquo;</a>
+                </div><!-- /.carousel -->
+            </div>
         </div>
 
         <!-- body copy -->

@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
     // $pageName needs to be set because dmw_head.php uses it in the title
+    // TODO: bad idea to set a global var like this. Better to pass it in to a function, but for now...
     $pageTitle = "template";
     require('dmw_head.php');
 ?>
@@ -11,14 +12,17 @@
 <?php
     require('dmw_navbar.php');
 ?>
+
     <!-- Begin page content -->
-    <div class="container">
+    <div id="main">
+        <div class="container">
 
 
 
 
-
+        </div>
     </div>
+
     <!-- End page content -->
     <!-- need this for sticky footer solution -->
     <div id="push"></div>
@@ -44,9 +48,10 @@
 <!-- set the active navbar item -->
 <script>
     $(document).ready(function(){
+        $('#top_navbar li').removeClass('active');
 
-        $('#TOP_NAVBAR li').removeClass('active');
-        $('#TOP_NAVBAR_?????').addClass('active');
+        // target the correct #top_navbar_????? navbar item
+        $('#top_navbar_?????').addClass('active');
     });
 </script>
 <!-- --------------------------------- -->

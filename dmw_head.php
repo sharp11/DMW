@@ -10,6 +10,9 @@
     <link href="css/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap/2.3.0/bootstrap-responsive.min.css" rel="stylesheet">
 
+<!--    alternate modal dialog from https://github.com/jschr/bootstrap-modal.git-->
+    <link href="css/bootstrap/2.3.0/bootstrap-modal.css" rel="stylesheet">
+
     <!-- Project -->
     <link href="css/app.css" rel="stylesheet">
 
