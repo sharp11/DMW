@@ -17,8 +17,12 @@
                             <li><a href="guitars.php">Guitars</a></li>
                             <li><a href="basses.php">Basses</a></li>
                             <li><a href="parts.php">Parts</a></li>
+                            <li><a href="#">Amps</a></li>
+                            <li><a href="#">Effects</a></li>
                             <li><a href="videos.php">Videos</a></li>
-                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">How to Buy</a></li>
+                            <li><a href="about_people.php">About</a></li>
                             <li><a href="contactus.php">Contact Us</a></li>
                         </ul>
                     </div>

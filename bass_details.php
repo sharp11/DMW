@@ -1,23 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <?php
-    // $pageName needs to be set because dmw_head.php uses it in the title
-    // TODO: bad idea to set a global var like this. Better to pass it in to a function, but for now...
-    $pageTitle = "Guitar Details";
-    require('dmw_head.php');
+// $pageName needs to be set because dmw_head.php uses it in the title
+// TODO: bad idea to set a global var like this. Better to pass it in to a function, but for now...
+$pageTitle = "Bass Details";
+require('dmw_head.php');
 ?>
 <body>
 <!-- ----------- Wrap all page content ------------- -->
 <div id="wrap">
     <?php
     require('dmw_navbar.php');
-?>
+    ?>
 
     <!-- Begin page content -->
     <div id="main">
         <div class="container">
             <div class="row">
-                <div class="span6">
+                <div class="span5">
                     <div class="Product_Image_Container">
                         <img src="img/gtr_for_details.jpg">
                     </div>
@@ -60,18 +60,18 @@
                             <ul>
                                 <li>
                                     <p class="product_description_short">
-                                    The LGX-SA is a three-voice guitar featuring electric and acoustic guitar sounds,
-                                    <!--                                    plus the infinite possibilities provided by synth access. The output from the bridge-->
-                                    <!--                                    transducer system in the LGX-SA produces six separate signals—one for each string.-->
-                                    <!--                                    This divided signal is called hexaphonic and is used to drive guitar synths.-->
-                                    <!--                                    The LGX adapted itself to this application quite easily. However, in addition to the-->
-                                    <!--                                    electronic modifications, the guitar itself was altered in order to achieve the best-->
-                                    <!--                                    possible performance. The most visible difference between the standard LGX and the-->
-                                    <!--                                    LGX-SA is in the ebony fingerboard. The use of the ebony fingerboard improves synth-->
-                                    <!--                                    tracking. Guitar synth systems in the past were technically complicated and required-->
-                                    <!--                                    radical changes in playing technique. The LGX-SA/RolandTM GR-synth combination-->
-                                    <!--                                    represents a new standard in user friendliness and performance. This is truly a-->
-                                    <!--                                    'plug in and play' system.-->
+                                        The LGX-SA is a three-voice guitar featuring electric and acoustic guitar sounds,
+                                        <!--                                    plus the infinite possibilities provided by synth access. The output from the bridge-->
+                                        <!--                                    transducer system in the LGX-SA produces six separate signals—one for each string.-->
+                                        <!--                                    This divided signal is called hexaphonic and is used to drive guitar synths.-->
+                                        <!--                                    The LGX adapted itself to this application quite easily. However, in addition to the-->
+                                        <!--                                    electronic modifications, the guitar itself was altered in order to achieve the best-->
+                                        <!--                                    possible performance. The most visible difference between the standard LGX and the-->
+                                        <!--                                    LGX-SA is in the ebony fingerboard. The use of the ebony fingerboard improves synth-->
+                                        <!--                                    tracking. Guitar synth systems in the past were technically complicated and required-->
+                                        <!--                                    radical changes in playing technique. The LGX-SA/RolandTM GR-synth combination-->
+                                        <!--                                    represents a new standard in user friendliness and performance. This is truly a-->
+                                        <!--                                    'plug in and play' system.-->
                                     </p>
                                 </li>
 
@@ -85,39 +85,39 @@
                                     </ul>
                                 </li>
 
-                            <li>Mahogany body</li>
+                                <li>Mahogany body</li>
 
-                            <li>Figured Maple Top</li>
+                                <li>Figured Maple Top</li>
 
-                            <li>Electronics
-                                <ul>
-                                    <li>Seymour Duncan Custom Humbuckers</li>
-                                    <li>5-Way switch</li>
-                                    <li>Guitar volume</li>
-                                    <li>Tone</li>
-                                    <li>Synth volume</li>
-                                </ul>
-                            </li>
+                                <li>Electronics
+                                    <ul>
+                                        <li>Seymour Duncan Custom Humbuckers</li>
+                                        <li>5-Way switch</li>
+                                        <li>Guitar volume</li>
+                                        <li>Tone</li>
+                                        <li>Synth volume</li>
+                                    </ul>
+                                </li>
 
-                            <li>Program up/down</li>
+                                <li>Program up/down</li>
 
-                            <li>Outputs
-                                <ul>
-                                    <li>Magnetic Output</li>
-                                    <li>13-pin Synth Output</li>
-                                    <li>Acoustic transducer Output</li>
-                                    <li>RMC transducer saddles with custom Pre-Amp EQ for: Acoustic Volume, Treble, Mid-Range and Bass controls</li>
-                                </ul>
-                            </li>
+                                <li>Outputs
+                                    <ul>
+                                        <li>Magnetic Output</li>
+                                        <li>13-pin Synth Output</li>
+                                        <li>Acoustic transducer Output</li>
+                                        <li>RMC transducer saddles with custom Pre-Amp EQ for: Acoustic Volume, Treble, Mid-Range and Bass controls</li>
+                                    </ul>
+                                </li>
 
-                            <li>Colors:
-                                <ul>
-                                    <li>CognacBurst</li>
-                                    <li>Trans Blue</li>
-                                </ul>
-                            </li>
+                                <li>Colors:
+                                    <ul>
+                                        <li>CognacBurst</li>
+                                        <li>Trans Blue</li>
+                                    </ul>
+                                </li>
 
-                            <li>Gig bag included</li>
+                                <li>Gig bag included</li>
 
                         </div>
                     </div>
@@ -132,7 +132,7 @@
 </div>
 <!-- ------------------ /. wrap --------------------- -->
 <?php
-    require('dmw_footer.php');
+require('dmw_footer.php');
 ?>
 
 <!-- --------- Javascript ---------- -->

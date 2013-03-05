@@ -59,9 +59,9 @@ require('dmw_head.php');
                         <p><img src="img/MapBig.jpg"></p>
                     </div>
 
-                    <div class="modal-footer">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                    </div>
+<!--                    <div class="modal-footer">-->
+<!--                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>-->
+<!--                    </div>-->
                 </div>
                 <!-- --------- -->
             </div>

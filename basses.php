@@ -18,42 +18,42 @@ require('dmw_head.php');
                 <ul class="thumbnails">
                     <li class="span4">
                         <div class="thumbnail">
-                            <p class="text-center"><a href="#BassDetailsModal" data-toggle="modal">
+                            <p class="text-center"><a href="bass_details.php">
                                 <img src="img/JazzBass.jpg" alt="Bass">
                             </a>
                             </p>
                             <h3 class="text-center">Awesome Bass</h3>
                             <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
                             <p class="text-center">
-                                <a href="#BassDetailsModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                                <a href="bass_details.php" role="button" class="btn btn-primary">View details &raquo;</a>
                             </p>
                         </div>
                     </li>
 
                     <li class="span4">
                         <div class="thumbnail">
-                            <p class="text-center"><a href="#BassDetailsModal" data-toggle="modal">
+                            <p class="text-center"><a href="bass_details.php">
                                 <img src="img/JazzBass.jpg" alt="Bass">
                             </a>
                             </p>
                             <h3 class="text-center">Awesome Bass</h3>
                             <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
                             <p class="text-center">
-                                <a href="#BassDetailsModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                                <a href="bass_details.php" role="button" class="btn btn-primary">View details &raquo;</a>
                             </p>
                         </div>
                     </li>
 
                     <li class="span4">
                         <div class="thumbnail">
-                            <p class="text-center"><a href="#BassDetailsModal" data-toggle="modal">
+                            <p class="text-center"><a href="bass_details.php">
                                 <img src="img/JazzBass.jpg" alt="Bass">
                             </a>
                             </p>
                             <h3 class="text-center">Awesome Bass</h3>
                             <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
                             <p class="text-center">
-                                <a href="#BassDetailsModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                                <a href="bass_details.php" role="button" class="btn btn-primary">View details &raquo;</a>
                             </p>
                         </div>
                     </li>
@@ -66,64 +66,46 @@ require('dmw_head.php');
                 <ul class="thumbnails">
                     <li class="span4">
                         <div class="thumbnail">
-                            <p class="text-center"><a href="#BassDetailsModal" data-toggle="modal">
+                            <p class="text-center"><a href="bass_details.php">
                                 <img src="img/JazzBass.jpg" alt="Bass">
                             </a>
                             </p>
                             <h3 class="text-center">Awesome Bass</h3>
                             <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
                             <p class="text-center">
-                                <a href="#BassDetailsModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                                <a href="bass_details.php" role="button" class="btn btn-primary">View details &raquo;</a>
                             </p>
                         </div>
                     </li>
 
                     <li class="span4">
                         <div class="thumbnail">
-                            <p class="text-center"><a href="#BassDetailsModal" data-toggle="modal">
+                            <p class="text-center"><a href="bass_details.php">
                                 <img src="img/JazzBass.jpg" alt="Bass">
                             </a>
                             </p>
                             <h3 class="text-center">Awesome Bass</h3>
                             <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
                             <p class="text-center">
-                                <a href="#BassDetailsModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                                <a href="bass_details.php" role="button" class="btn btn-primary">View details &raquo;</a>
                             </p>
                         </div>
                     </li>
 
                     <li class="span4">
                         <div class="thumbnail">
-                            <p class="text-center"><a href="#BassDetailsModal" data-toggle="modal">
+                            <p class="text-center"><a href="bass_details.php">
                                 <img src="img/JazzBass.jpg" alt="Bass">
                             </a>
                             </p>
                             <h3 class="text-center">Awesome Bass</h3>
                             <p>In auctor felis at sem blandit vestibulum eget non urna. Aenean facilisis nisl quis lorem porta tempor. Integer facilisis aliquet.</p>
                             <p class="text-center">
-                                <a href="#BassDetailsModal" role="button" class="btn btn-primary" data-toggle="modal">View details &raquo;</a>
+                                <a href="bass_details.php" role="button" class="btn btn-primary">View details &raquo;</a>
                             </p>
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
-
-        <!-- Bass details Modal -->
-        <div id="BassDetailsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="BassDetailsModalLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="BassDetailsModalLabel" class="text-center">Awesome Bass</h3>
-            </div>
-
-            <div class="modal-body">
-                <p class="text-center"><img src="img/JazzBassCloseUp.jpg"></p>
-                <p>Quisque porttitor aliquam leo sit amet porta! Aenean aliquam nisl eget orci scelerisque adipiscing! Cum sociis natoque penatibus et magnis dis parturient montes</p>
-            </div>
-
-
-            <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
             </div>
         </div>
         <!-- --------- -->

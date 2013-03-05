@@ -49,7 +49,7 @@ require('dmw_footer.php');
 <script>
     $(document).ready(function(){
         $('#top_navbar li').removeClass('active');
-        $('#top_navbar_aboutus').addClass('active');
+        $('#top_navbar_about').addClass('active');
     });
 </script>
 </body>
