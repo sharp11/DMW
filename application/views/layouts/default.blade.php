@@ -47,25 +47,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="pull-left" href="index.php">
-                    <img src="img/DMWLogo50pxHigh.jpg" alt="Dalton Musicworks"/>
+                <a id="navbar_logo" class="pull-left" href="home">
+                    <img src="img/DMWLogo40pxHigh.jpg" alt="Dalton Musicworks"/>
                     <!--                Dalton Musicworks-->
                 </a>
                 <div class="nav-collapse collapse">
                     <ul id="top_navbar" class="nav pull-right">
                         <li id="top_navbar_guitars"><a href="guitars">Guitars</a></li>
                         <li id="top_navbar_basses"><a href="basses">Basses</a></li>
-                        <li id="top_navbar_parts" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parts <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Bodies</a></li>
-                                <li><a href="#">Necks</a></li>
-                                <li><a href="#">Bidges</a></li>
-                                <li><a href="#">Machine Heads</a></li>
-                                <li><a href="#">Pickups</a></li>
-                                <li><a href="#">Pickguards</a></li>
-                                <li><a href="#">Hardware</a></li>
-                            </ul>
+                        <li id="top_navbar_parts"><a href="parts">Parts</a></li>
+<!--                        <li id="top_navbar_parts" class="dropdown">-->
+<!--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parts <b class="caret"></b></a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                                <li><a href="#">Bridges</a></li>-->
+<!--                                <li><a href="#">Bodies</a></li>-->
+<!--                                <li><a href="#">Hardware</a></li>-->
+<!--                                <li><a href="#">Machine Heads</a></li>-->
+<!--                                <li><a href="#">Necks</a></li>-->
+<!--                                <li><a href="#">Pickguards</a></li>-->
+<!--                                <li><a href="#">Pickups</a></li>-->
+<!--                            </ul>-->
                         </li>
                         <li id="top_navbar_amps"><a href="amps">Amps</a></li>
                         <li id="top_navbar_effects"><a href="effects">Effects</a></li>
@@ -111,9 +112,9 @@
             <div class="span12">
                 <div id="footer_row1" class="row">
                     <div class="span5">
-                        <a class="brand" href="index.php">
-                            <img src="img/DMWLogo50pxHigh.jpg" alt="Dalton Musicworks"/>
-                            <!--                            Dalton Musicworks-->
+                        <a id="footer_logo" class="brand" href="home">
+                            <img src="img/DMWLogo40pxHigh.jpg" alt="Dalton Musicworks"/>
+<!--                                                        Dalton Musicworks-->
                         </a>
                     </div>
 

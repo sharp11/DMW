@@ -2,6 +2,7 @@
 
 
 Route::get('/', 'dmw@index');
+Route::get('home', 'dmw@index');
 Route::get('guitars', 'dmw@guitars');
 Route::get('basses', 'dmw@basses');
 Route::get('parts', 'dmw@parts');
