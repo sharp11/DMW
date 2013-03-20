@@ -1,0 +1,5 @@
+
+<?php \Laravel\Section::start('content'); ?>
+<h1>FAQ</h1>
+<?php \Laravel\Section::stop(); ?>
+<?php echo view('layouts.default')->with(get_defined_vars())->render(); ?>
