@@ -1,0 +1,1 @@
+This is the /Users/eli/Sites/DMW/application/views/dmw/parts.blade.php view
