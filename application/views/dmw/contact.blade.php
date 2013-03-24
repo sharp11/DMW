@@ -6,7 +6,7 @@
         <!-- Email Form -->
         <h3>Get in Touch!</h3>
 
-        <form>
+        {{ Form::open('contact', 'POST') }}
             <label>Your Name</label>
             <input type="text" class="span4" id="yourName" placeholder="Stik E. Frets">
 
@@ -16,10 +16,11 @@
             <label>What's Up?</label>
             <textarea rows="10" class="span5" placeholder="You guys rock!"></textarea>
 
-            <!-- why do we need this just to have the submit button line up under the message box???? -->
+            <!-- Bootstrap:: why do we need this just to have the submit button line up under the message box???? -->
             <label></label>
             <input type="submit" value="Send">
-        </form>
+        {{ Form::close() }}
+
     </div>
 
     <div class="span6">

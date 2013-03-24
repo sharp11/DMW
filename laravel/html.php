@@ -229,8 +229,8 @@ class HTML {
 	 * An array of parameters may be specified to fill in URI segment wildcards.
 	 *
 	 * <code>
-	 *		// Generate a link to the "dmw@index" action
-	 *		echo HTML::link_to_action('dmw@index', 'Home');
+	 *		// Generate a link to the "home@index" action
+	 *		echo HTML::link_to_action('home@index', 'Home');
 	 *
 	 *		// Generate a link to the "user@profile" route and add some parameters
 	 *		echo HTML::link_to_action('user@profile', 'Profile', array('taylor'));

@@ -5,7 +5,7 @@
         <!-- Email Form -->
         <h3>Get in Touch!</h3>
 
-        <form>
+        <?php echo  Form::open('contact', 'POST') ; ?>
             <label>Your Name</label>
             <input type="text" class="span4" id="yourName" placeholder="Stik E. Frets">
 
@@ -18,7 +18,8 @@
             <!-- why do we need this just to have the submit button line up under the message box???? -->
             <label></label>
             <input type="submit" value="Send">
-        </form>
+        <?php echo  Form::close() ; ?>
+
     </div>
 
     <div class="span6">

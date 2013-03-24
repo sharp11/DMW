@@ -1,19 +1,62 @@
 <?php
 
-
+/* ----------------  general DMW routes ------------- */
 Route::get('/', 'dmw@index');
 Route::get('home', 'dmw@index');
-Route::get('guitars', 'dmw@guitars');
-Route::get('basses', 'dmw@basses');
-Route::get('parts', 'dmw@parts');
-Route::get('amps', 'dmw@amps');
-Route::get('effects', 'dmw@effects');
-Route::get('videos', 'dmw@videos');
 Route::get('faq', 'dmw@faq');
 Route::get('how-to-buy', 'dmw@how_to_buy');
 Route::get('about-philosophy', 'dmw@about_philosophy');
 Route::get('about-people', 'dmw@about_people');
 Route::get('contact', 'dmw@contact');
+Route::post('contact', array(/*'before'=>'csrf',*/ 'dmw@contact'));
+
+/* ----------------  amps routes ------------- */
+Route::get('amps', 'dmw@amps');
+/* ----------------  effects routes ------------- */
+Route::get('effects', 'dmw@effects');
+/* ----------------  videos routes ------------- */
+Route::get('videos', 'dmw@videos');
+
+/* ----------------  guitar routes ------------- */
+// Admin: create a guitar
+Route::get('guitars/new', array('as'=>'create_guitar', 'uses'=>'guitars@new'));
+Route::post('guitars/new', array(/*'before'=>'csrf',*/ 'uses'=>'guitars@new'));
+// Admin: edit a guitar
+Route::get('guitars/(:all)/edit', array('as'=>'edit_guitar', 'uses'=>'guitars@edit'));
+Route::put('guitars/update', array(/*'before'=>'csrf',*/ 'uses'=>'guitars@update'));
+// Admin: delete a guitar
+Route::get('guitars/(:all)/delete', array('as'=>'delete_guitar', 'uses'=>'guitars@destroy'));
+// display all guitars
+Route::get('guitars',  array('as'=>'guitars', 'uses'=>'guitars@index'));
+// view a specific guitar
+Route::get('guitars/(:all)', array('as'=>'guitar', 'uses'=>'guitars@show'));
+
+/* ----------------  bass routes ------------- */
+// Admin: create a bass
+Route::get('basses/new', array('as'=>'create_bass', 'uses'=>'basses@new'));
+Route::post('basses/new', array(/*'before'=>'csrf',*/ 'uses'=>'basses@new'));
+// Admin: edit a bass
+Route::get('basses/(:all)/edit', array('as'=>'edit_bass', 'uses'=>'basses@edit'));
+Route::put('basses/update', array(/*'before'=>'csrf',*/ 'uses'=>'basses@update'));
+// Admin: delete a bass
+Route::get('basses/(:all)/delete', array('as'=>'delete_bass', 'uses'=>'basses@destroy'));
+// display all basses
+Route::get('basses',  array('as'=>'basses', 'uses'=>'basses@index'));
+// view a specific bass
+Route::get('basses/(:all)', array('as'=>'bass', 'uses'=>'basses@show'));
+
+/* ----------------  parts routes ------------- */
+Route::get('parts', array('as'=>'parts', 'uses'=>'parts@index'));
+Route::get('bodies', array('as'=>'bodies', 'uses'=>'parts@bodies'));
+Route::get('fixed-bridges', array('as'=>'fixed-bridges', 'uses'=>'parts@fixed_bridges'));
+Route::get('tremolo-bridges', array('as'=>'trem-bridges', 'uses'=>'parts@trem_bridges'));
+Route::get('hardware', array('as'=>'hardware', 'uses'=>'parts@hardware'));
+Route::get('machine-heads', array('as'=>'machine-heads', 'uses'=>'parts@machine_heads'));
+Route::get('necks', array('as'=>'necks', 'uses'=>'parts@necks'));
+Route::get('pickguards', array('as'=>'pickguards', 'uses'=>'parts@pickguards'));
+Route::get('pickups', array('as'=>'pickups', 'uses'=>'parts@pickups'));
+
+
 
 /*
 |--------------------------------------------------------------------------

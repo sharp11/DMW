@@ -69,10 +69,10 @@ return array(
 
 		'mysql' => array(
 			'driver'   => 'mysql',
-			'host'     => '127.0.0.1',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'host'     => 'localhost',
+			'database' => 'dmw_db',
+			'username' => 'dmw_admin',
+			'password' => 'WIWD*2013',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
