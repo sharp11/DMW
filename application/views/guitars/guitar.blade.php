@@ -3,9 +3,19 @@
 @section('content')
 
 <div class="row">
+    <div class="span12">
+        <ul class="breadcrumb">
+            <li>{{ HTML::link('', 'Home') }}<span class="divider">/</span></li>
+            <li>{{ HTML::link('guitars', 'Guitars') }}<span class="divider">/</span></li>
+            <li class="active">{{ $guitar->model_friendly }}</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
     <div class="span5">
         <div class="Product_Image_Container">
-            <img src="img/gtr_for_details.jpg">
+            {{ HTML::image('img/gtr_for_details.jpg', 'Guitar') }}
         </div>
     </div>
 
@@ -21,7 +31,7 @@
 
             <!--Add to Cart button and in/out stock status-->
             <div id="ctl00_ContentPlaceHolder1_cart">
-                <input type="image" name="ctl00$ContentPlaceHolder1$btnAddToCart" id="ctl00_ContentPlaceHolder1_btnAddToCart" src="img/addtocart_en.gif" alt="Add To Cart" style="border-width:0px;">
+                <input type="image" name="ctl00$ContentPlaceHolder1$btnAddToCart" id="ctl00_ContentPlaceHolder1_btnAddToCart" src="{{ URL::to('img/addtocart_en.gif') }}" alt="Add To Cart" style="border-width:0px;">
                 <div id="ctl00_ContentPlaceHolder1_pnlValidation">
                     <div id="ctl00_ContentPlaceHolder1_vsAttributes" class="validationSummary" style="color:Red;display:none;">
 
@@ -29,7 +39,10 @@
                 </div>
 
                             <span id="ctl00_ContentPlaceHolder1_lblStockStatus">
-                                <p><img src="img/instock.jpg" width="13" height="13"> This item is in stock.</p>
+                                <p>
+                                    {{ HTML::image('img/instock.jpg', 'In stock', array('width' => '13',  'height' => '13')) }}
+                                    This item is in stock.
+                                </p>
                             </span>
             </div>
 

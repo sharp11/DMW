@@ -15,7 +15,7 @@
             <label>What's Up?</label>
             <textarea rows="10" class="span5" placeholder="You guys rock!"></textarea>
 
-            <!-- why do we need this just to have the submit button line up under the message box???? -->
+            <!-- Bootstrap:: why do we need this just to have the submit button line up under the message box???? -->
             <label></label>
             <input type="submit" value="Send">
         <?php echo  Form::close() ; ?>
@@ -27,7 +27,9 @@
         <h3>Where We are:</h3>
         <!-- Clicking this placeholder fires the mapModal Reveal modal -->
         <p>
-            <a href="#myModal" role="button" class="btn" data-toggle="modal"><img src="img/Map.jpg" /></a>
+            <a href="#myModal" role="button" class="btn" data-toggle="modal">
+                <?php echo  HTML::image('img/Map.jpg', 'Where we are on map') ; ?>
+            </a>
         </p>
         <p><a href="#myModal" role="button" class="btn" data-toggle="modal">View Map</a></p>
         <p>
@@ -44,7 +46,7 @@
             </div>
 
             <div class="modal-body">
-                <p><img src="img/MapBig.jpg"></p>
+                <p><?php echo  HTML::image('img/MapBig.jpg', 'Where we are on map') ; ?></p>
             </div>
 
             <!--                    <div class="modal-footer">-->
